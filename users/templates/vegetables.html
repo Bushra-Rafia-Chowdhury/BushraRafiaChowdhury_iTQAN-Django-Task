@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> <center>
+    <div class="">
+        <a href="#" class="position1">Home</a>
+        <a href="{% url 'vegetables' %}" class="position1">Vegetable</a>
+        <a href="{% url 'fruit' %}" class="position1">Fruit</a>
+        <a href="{% url 'beverage' %}" class="position1">Beverage</a>
+        <a href="{% url 'baby' %}" class="position1">Baby</a>
+        <a href="{% url 'bread' %}" class="position1">Bread & Bakery</a>
+        <a href="{% url 'logout' %}" class="position1" >Logout</a>
+  </div>
+
+<br><br>
+    <div class="position6">
+        <p>In Vegetable Section, available products are:</p>
+    {% for i in data %}
+    <a href="{% url 'veg_detail' i.pk %}" >{{ i.name }}</a>
+    <br><br>
+    {% endfor %}
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,92 @@
+#popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: seagreen;
+        width: 500px;
+        height: 500px;
+        margin-left: -250px; /*Half the value of width to center div*/
+        margin-top: -250px; /*Half the value of height to center div*/
+        z-index: 200;
+    }
+
+body {
+    background-image: url(https://i.pinimg.com/originals/ce/eb/3d/ceeb3d02ced53a1a052302e37784b8a1.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+
+}
+.position1 {
+    font-size: 25px;
+    background-color: seagreen;
+    padding: 20px;
+    margin: 22px;
+    text-align: center;
+    color: white;
+}
+.position2{
+    font-size: 25px;
+    background-image: linear-gradient(to right, seagreen,lightgreen), url(https://i.pinimg.com/originals/ce/eb/3d/ceeb3d02ced53a1a052302e37784b8a1.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color:white;
+    padding:10px;
+    margin: 30px;
+}
+.position3{
+    font-size: 25px;
+    background-color: seagreen;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color:white;
+}
+.position4 {
+    font-size: 35px;
+    padding: 30px;
+    background-color: seagreen;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.position5{
+    font-size: 16px;
+    background-color: seagreen;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color:white;
+}
+
+#btn1{
+    border:none;
+    background-color:aliceblue;
+    font-size:20px;
+    width:50%;
+}
+
+.position6{
+    margin-Left:400px;
+    margin-Right:400px;
+    padding:20px;
+    font-size: 20px;
+    background-image: url(https://wallpaperaccess.com/full/1556608.jpg);
+    text-align: center;
+    color:black;
+}
+
+.position7 {
+    padding:40px;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    color:black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+

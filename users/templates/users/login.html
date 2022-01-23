@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" id="popup" method="POST" class="position5">
+    <h3>login</h3>
+    {% csrf_token %}
+    {% for field in form %}
+        <p>{{ field.label }}: <br> {{ field }}</p>
+    {% endfor %}
+    <button type="submit" id="btn1">Login</button>
+    <p>Don't have an account? <a href="{% url 'register' %}" class="position5"> Signup </a></p>
+</form>
+</body>
+</html>

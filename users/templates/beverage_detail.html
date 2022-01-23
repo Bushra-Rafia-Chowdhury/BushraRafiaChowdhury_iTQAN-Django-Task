@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="">
+        <a href="{% url 'vegetables' %}" class="position1">Vegetable</a>
+        <a href="{% url 'fruit' %}" class="position1">Fruit</a>
+        <a href="{% url 'beverage' %}" class="position1">Beverage</a>
+        <a href="{% url 'baby' %}" class="position1">Baby</a>
+        <a href="{% url 'bread' %}" class="position1">Bread & Bakery</a>
+        <a href="{% url 'logout' %}" class="position1" >Logout</a>
+  </div>
+<div class="position7">
+    {% if data.img %}
+    <img src="{{ data.img.url }}" alt="{{ data.id }}" height="240" width="300">
+    {% else %}
+    <span class="text-muted">No Image</span>
+    {% endif %}
+    <br>
+    <br>
+    Product: {{ data.name }}<br>
+    Price: {{ data.price }}<br>
+    Description: {{ data.description }}<br>
+
+</div>
+
+</body>
+</html>

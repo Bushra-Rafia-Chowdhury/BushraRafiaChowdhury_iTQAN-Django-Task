@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </style>
+</head>
+<body>
+<div id="maincontent">
+</div>
+<form  id="popup" class="position5" action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" id="btn1">Register</button>
+</form>
+
+</body>
+</html>

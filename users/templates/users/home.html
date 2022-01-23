@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if user.is_authenticated %}
+    <div class="">
+        <a href="{% url 'vegetables' %}" class="position1">Vegetable</a>
+        <a href="{% url 'fruit' %}" class="position1">Fruit</a>
+        <a href="{% url 'beverage' %}" class="position1">Beverage</a>
+        <a href="{% url 'baby' %}" class="position1">Baby</a>
+        <a href="{% url 'bread' %}" class="position1">Bread & Bakery</a>
+        <a href="{% url 'logout' %}" class="position1" >Logout</a>
+  </div>
+
+    <div class="position2">
+        <p>Hi, {{ user.username }},Welcome to the Ecommerce Grocery Website.</p>
+    </div>
+
+        <li><hr> <a href="{% url 'vegetables' %}" >
+            <h2 class="position3"> Vegetable</h2>  <center>
+            <img src="https://www.collinsdictionary.com/images/full/vegetable_82806697.jpg"
+                  height="240" width="300"></center></a></li>
+<br> <hr>
+
+<li><hr> <a href="{% url 'fruit' %}" >
+            <h2 class="position3"> Fruit</h2>  <center>
+            <img src="https://www.collinsdictionary.com/images/full/fruit_163436567.jpg"
+                  height="240" width="300"></center></a></li>
+<br> <hr>
+
+<li><hr> <a href="{% url 'beverage' %}" >
+            <h2 class="position3"> Beverage</h2>  <center>
+            <img src="https://thumbs.dreamstime.com/b/cans-beverages-19390639.jpg"
+                  height="240" width="300"></center></a></li>
+<br> <hr>
+
+<li><hr> <a href="{% url 'baby' %}" >
+            <h2 class="position3"> Baby</h2>  <center>
+            <img src="https://thumbs.dreamstime.com/b/set-baby-accessories-background-white-158783783.jpg"
+                  height="240" width="300"></center></a></li>
+<br> <hr>
+
+<li><hr> <a href="{% url 'bread' %}" >
+            <h2 class="position3"> Bread & Bakery</h2>  <center>
+            <img src="https://previews.123rf.com/images/pretoperola/pretoperola1110/pretoperola111000060/10878970-bread-and-bakery-products-isolated-on-white-background.jpg"
+                  height="240" width="300"></center></a></li>
+<br> <hr>
+
+
+{% else %}
+    <div class="position4">
+        Welcome! <br><hr>
+        <a href="{% url 'register' %}">Signup / </a>
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+{% endif %}
+</body>
+</html>
