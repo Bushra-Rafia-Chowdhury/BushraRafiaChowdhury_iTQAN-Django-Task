@@ -165,7 +165,7 @@ pyasn1-modules==0.2.8
 pycparser==2.18
 pyfindfiles==1.3.3
 Pygments==2.4.2
-pygubu==0.9.8.2
+pygubu==0.9.8.1
 PyInstaller==3.5
 PyJWT==1.7.1
 pylodge==0.1.8
