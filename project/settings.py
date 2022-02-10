@@ -25,8 +25,8 @@ SECRET_KEY = '8^)llrdwyh#)5!h##%=nh)f!i^8_np1#gsu=olxjxms#@c24c('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['ecommerce0005.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['ecommerce0005.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -124,6 +124,6 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = 'home'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
